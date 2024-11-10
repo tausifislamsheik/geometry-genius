@@ -11,7 +11,141 @@
 <body class="m-8">
     <header></header>
     <main>
-        
+        <div class="flex flex-col md:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/triangle.png" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5 X b X h</p>
+                      <div>
+                        <input class="w-24 p-2 " type="number" name="" id="tri-base-input" placeholder="b">
+                        <span class="ml-2 mr-2">cm</span>
+                        <input class="w-24 p-2"type="number" name="" id="tri-height-input" placeholder="h">
+                        <span class="ml-2">cm</span>
+                      </div>
+                      <div>
+                        <h1 class="text-2xl">Area: <span id="area-tri">0 </span>cm<sup>2</sup></h1>
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button id="calculate-tri-btn" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/rectangle.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Rectangle</h2>
+                      <p>Area (A) = w X l</p>
+                      <div>
+                        <input class="w-24 p-2 " type="number" name="" id="rect-width-input" placeholder="w">
+                        <span class="ml-2 mr-2">cm</span>
+                        <input class="w-24 p-2"type="number" name="" id="rect-length-input" placeholder="l">
+                        <span class="ml-2">cm</span>
+                      </div>
+                      <div>
+                        <h1 class="text-2xl">Area: <span id="area-rect">0 </span>cm<sup>2</sup></h1>
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button onclick="rectangleParentSection()" id="calculate-rect-btn" class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/parallelogram.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p>Area (A) = b  X  h</p>
+                      <div class="flex">
+                        <h3>b=</h3>0<span class="mr-4">cm,<sup>2</sup></span>
+                        <h3>h=</h3>0<span>cm <sup>2</sup></span>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/rhombus.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Rhombus</h2>
+                      <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                      <div class="flex">
+                        <h3>d<sub>1</sub>=</h3>0<span class="mr-4 ml-2">cm,<sup>2</sup></span>
+                        <h3>d<sub>2</sub>=</h3>0<span class="ml-2">cm <sup>2</sup></span>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/pentagon.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Pentagon</h2>
+                      <p>Area (A) = b  X  h</p>
+                      <div class="flex">
+                        <h3>b=</h3>0<span class="mr-4">cm,<sup>2</sup></span>
+                        <h3>h=</h3>0<span>cm <sup>2</sup></span>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+                  <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                      <img
+                        src="images/ellipse.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body items-center">
+                      <h2 class="card-title">Ellipse</h2>
+                      <p>Area (A) = b  X  h</p>
+                      <div class="flex">
+                        <h3>b=</h3>0<span class="mr-4">cm,<sup>2</sup></span>
+                        <h3>h=</h3>0<span>cm <sup>2</sup></span>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="card-actions my-6">
+                        <button class="btn btn-primary w-full">Calculate</button>
+                      </div>
+                  </div>
+            </div>
+            <div class="w-72 text-center border-2 border-gray-700 rounded-xl p-5">
+                <h3 class="text-2xl">Area Calculation</h3>
+                <hr>
+            </div>
+        </div>
     </main>
     <footer></footer>
     <script src="scripts.js"></script>
